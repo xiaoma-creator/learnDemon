@@ -1,0 +1,38 @@
+Tue Jul 12 09:26:40 2022 user.info reboot: keylog--cold reboot
+Tue Jul 12 09:26:44 2022 daemon.warn netifd: keylog--Interface 'lan' is now up
+Tue Jul 12 09:26:44 2022 daemon.warn netifd: keylog--Interface 'loopback' is now up
+Tue Jul 12 09:26:47 2022 daemon.warn netifd: keylog--Interface 'wan' is now up
+Tue Jul 12 09:26:47 2022 user.warn inet-check: keylog--wan internet connection is normal
+Tue Jul 12 09:31:33 2022 user.info goahead: keylog--web user login
+Tue Jul 12 09:31:38 2022 auth.info login[4148]: keylog--telnet or serial user login
+Tue Jul 12 09:41:48 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 09:42:51 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 09:44:47 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 09:44:48 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 09:45:58 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 09:46:36 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 10:15:55 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 13:49:55 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 13:51:15 2022 daemon.warn netifd: keylog--Interface 'lan' is now down
+Tue Jul 12 13:51:15 2022 daemon.warn netifd: keylog--Interface 'loopback' is now down
+Tue Jul 12 13:51:15 2022 daemon.warn netifd: keylog--Interface 'wan' is now down
+Tue Jul 12 13:51:15 2022 daemon.warn netifd: keylog--Interface 'wan6' is now down
+Tue Jul 12 13:51:18 2022 daemon.warn netifd: keylog--Interface 'lan' is now up
+Tue Jul 12 13:51:18 2022 daemon.warn netifd: keylog--Interface 'loopback' is now up
+Tue Jul 12 13:51:20 2022 user.info cwmpd: keylog--cwmp fails to be connected..
+Tue Jul 12 13:51:25 2022 daemon.warn netifd: keylog--Interface 'wan' is now up
+Tue Jul 12 13:51:25 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 13:51:25 2022 user.warn inet-check: keylog--wan internet connection is normal
+Tue Jul 12 14:11:51 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 14:12:38 2022 daemon.warn netifd: keylog--Interface 'lan' is now down
+Tue Jul 12 14:12:38 2022 daemon.warn netifd: keylog--Interface 'loopback' is now down
+Tue Jul 12 14:12:38 2022 daemon.warn netifd: keylog--Interface 'wan' is now down
+Tue Jul 12 14:12:38 2022 daemon.warn netifd: keylog--Interface 'wan6' is now down
+Tue Jul 12 14:12:41 2022 daemon.warn netifd: keylog--Interface 'lan' is now up
+Tue Jul 12 14:12:41 2022 daemon.warn netifd: keylog--Interface 'loopback' is now up
+Tue Jul 12 14:12:43 2022 user.info cwmpd: keylog--cwmp fails to be connected..
+Tue Jul 12 14:12:48 2022 daemon.warn netifd: keylog--Interface 'wan' is now up
+Tue Jul 12 14:12:49 2022 user.warn inet-check: keylog--wan internet connection is normal
+Tue Jul 12 14:12:50 2022 user.info cwmpd: keylog--cwmp is successfully connected..
+Tue Jul 12 14:13:25 2022 user.info goahead: keylog--web user login
+Tue Jul 12 14:42:11 2022 user.info goahead: keylog--web user login
