@@ -1,0 +1,53 @@
+有中文怎么办...也能输出
+TRACE: http_split_headers()
+TRACE: http_parse_headers()
+TRACE: http_parse_cookie()
+session status: ANSLYSE
+Node Name SOAP-ENV:Header, (SOAP-ENV:Body) 1
+Node Name SOAP-ENV:Body, (SOAP-ENV:Body) 1
+cwmp_xml_get_child_with_name found node(0x1aa3de4a)
+analyse method is: cwmp:InformResponse
+agent analyse newdoc is null.
+agent analyse begin check global event, 0
+newdoc (nil), msglength: 662
+session status: SEND
+session data request length: 0
+TRACE: cwmp_agent_send_request()
+TRACE: cwmp_session_send_request()
+session dest url: https://10.2.81.201:8012
+session data sended OK, rv=0
+session status: RECV
+TRACE: http_read_header()
+HTTP/1.1 204 No Content
+
+Content-Length: 0
+
+Server: Microsoft-HTTPAPI/2.0
+
+Content-type: text/xml; charset=utf-8
+
+Date: Tue, 12 Jul 2022 07:06:47 GMT
+
+
+
+http read header length: 153, [
+HTTP/1.1 204 No Content
+Content-Length: 0
+Server: Microsoft-HTTPAPI/2.0
+Content-type: text/xml; charset=utf-8
+Date: Tue, 12 Jul 2022 07:06:47 GMT
+
+
+]
+TRACE: http_split_headers()
+TRACE: http_parse_headers()
+Http read response code is (204)
+http read response. return code is 204, 204
+session status: END
+session status: EXIT
+TRACE: http_socket_close()
+session status: run task
+TRACE: cwmp_agent_run_tasks()
+queue is empty.
+no more task to run
+end of file

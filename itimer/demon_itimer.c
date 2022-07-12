@@ -2,6 +2,7 @@
 #include <sys/time.h>
 #include <signal.h>
 #include <string.h>
+#include <unistd.h>
 /* 
 	主要运作过程：itimer将itimerval里面的it_value递减，当it_value
 	减为0时触发SIGALRM信号，然后将itimerval里面的it_interval的值赋给it_value
@@ -12,7 +13,7 @@
 *  函 数 名：itimer_init
 *  功能描述：初始化定时器
 *  输入参数：int i_timeMs 定时长度ms  
-			 int i_flag 触发标志，1：只触发一次 0：循环触发
+			 int i_flagOnce 触发标志，1：只触发一次 0：循环触发
 *  输出参数：无
 *  返 回 值：void
 *  
@@ -22,12 +23,12 @@
 *            修改内容：新生成函数
 *  
 *****************************************************************************/
-void itimer_init(int i_timeMs, int i_flag)
+void itimer_init(int i_timeMs, int i_flagOnce)
 {
     struct itimerval st_newValue;
 	
 	memset(&st_newValue, 0, sizeof(struct itimerval));
-	if (!i_flag)
+	if (!i_flagOnce)
 	{
 		st_newValue.it_interval.tv_sec = i_timeMs/1000;
 		st_newValue.it_interval.tv_usec = i_timeMs%1000;	    
@@ -85,11 +86,12 @@ void itimer_init_sigaction()
 *****************************************************************************/
 int main(int argc, char const *argv[])
 {	
-	itimer_init(1000, 1);
+	itimer_init(1000, 0);
 	itimer_init_sigaction();
-	while(1);
+	while(1){
+//		usleep(100);
+	}
 	
     return 0;
 }
-
 
