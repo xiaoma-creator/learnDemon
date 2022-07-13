@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define FILEPATH ("./message.log")
+#define FILEPATH ("./keymessage.log")
 
 /*****************************************************************************
 *  函 数 名：main
@@ -22,49 +22,62 @@
 *****************************************************************************/
 int main(int argc, char const *argv[])
 {
-	char *sBuff = NULL;
-	unsigned int ulBuffSize = 0;
 	char szLine[512] = {0};
-	time_t pCurrentTime;
+	char *sBuff = NULL;
+	char *sMoreMemory = NULL;
 	char *sCurrentTime = NULL;
+	unsigned long ulBuffSize = 0;
+	time_t SCurrentTime;
+	struct tm *pSLocalTime = NULL;
 	
-    FILE *pFile = fopen(FILEPATH, "r");
+	
+	/* 获取当前日期 */
+	SCurrentTime = time(NULL);
+	pSLocalTime = localtime(&SCurrentTime);
+    
+
+	FILE *pFile = fopen(FILEPATH, "r");
 	if (!pFile)
 	{
 		printf("can not open %s: %s\n", FILEPATH, strerror(errno));
 		exit(EXIT_FAILURE);
 	}
 
-	/* 获取当前日期 */
-	ctime(&pCurrentTime);
-	printf("\r\n \033[1;35m[--ywf--]func: %s, line: %d\033[0m: sCurrentTime = %s\n", __FUNCTION__, __LINE__, sCurrentTime);
-
-	
 	/* 一次读取一行 */
 	fseek(pFile, 0, SEEK_SET);
-	sBuff = (char *)malloc(1);
 	while (NULL != fgets(szLine, sizeof(szLine), pFile))
 	{
-		//提取时间
-		
-
-		
 		ulBuffSize += strlen(szLine);
-		sBuff = (char *)realloc(sBuff, ulBuffSize);
-		if (NULL == sBuff )
+		
+		sMoreMemory = (char *)realloc(sBuff, ulBuffSize + 1);
+		if (NULL == sMoreMemory )
 		{
+			if (NULL != sBuff)
+			{
+			    free(sBuff);
+			}
 		    perror("realloc fail");
 			return -1;
 		}
-		
-		
-		strcat(sBuff, szLine);
+
+		sBuff = sMoreMemory;
+		memcpy(sBuff+ulBuffSize-strlen(szLine), szLine, strlen(szLine));
+        sBuff[ulBuffSize] = '\0';
 	}
 	printf("%s", sBuff);
-	free(sBuff);
-	fclose(pFile);
 
-	printf("\r\n \033[1;35m[--ywf--]func: %s, szLine: %d\033[0m: file size %fkb\n", __FUNCTION__, __LINE__, ulBuffSize/1024.0);
+    if (NULL != sBuff)
+    {
+	    free(sBuff);
+    }
+
+    if (NULL != pFile)
+    {
+	    fclose(pFile);
+    }
+
+	printf("\r\n \033[1;35m[--ywf--]func: %s, szLine: %d\033[0m: file size %ld byte\n", __FUNCTION__, __LINE__, ulBuffSize);
+
     return 0;
 }
 
