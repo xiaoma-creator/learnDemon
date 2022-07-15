@@ -1,16 +1,22 @@
 #makefile注释
 
+#makefile 环境变量，指定搜索路径
+VPATH:=src obj
+
+#include path
+INCLUDE:=inc
+
 TARGET=a.out
-OBJ=demon_fopen.o
-SOURCE_FILE=$(wildcard %.c)
+OBJ=main.o my_file.o
+
+SOURCE_FILE=$(wildcard *.c) #扩展 *.c 否则使用$(SOURCE_FILE)时会认为*.c是文件名
 
 
 $(TARGET):$(OBJ)
 	gcc -o $@ $^
 
-
 %.o:%.c
-	gcc -c $^ -o $@
+	gcc -c $^ -o $@ -I $(INCLUDE)
 
 clean:
 	rm -fr *.o a.out *.exe

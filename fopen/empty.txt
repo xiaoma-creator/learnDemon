@@ -1,0 +1,599 @@
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Booting Linux on physical CPU 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Boot CPU: AArch64 Processor [410fd034]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] psci: probing for conduit method from DT.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] psci: PSCIv0.2 detected in firmware.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] psci: Using standard PSCI v0.2 function IDs
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] psci: Trusted OS migration not required
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] PERCPU: Embedded 18 pages/cpu @ffffffc01ffa6000 s35328 r8192 d30208 u73728
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Detected VIPT I-cache on CPU0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] CPU features: enabling workaround for ARM erratum 845719
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 128976
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] PID hash table entries: 2048 (order: 2, 16384 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Dentry cache hash table entries: 65536 (order: 7, 524288 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Inode-cache hash table entries: 32768 (order: 6, 262144 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] software IO TLB: mapped [mem 0x5fcf4000-0x5fdf4000] (1MB)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Memory: 497312K/524096K available (5184K kernel code, 349K rwdata, 1872K rodata, 336K init, 375K bss, 26784K reserved, 0K cma-reserved)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=2, Nodes=1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Preemptible hierarchical RCU implementation.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] 	Build-time adjustment of leaf fanout to 64.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] NR_IRQS:64 nr_irqs:64 0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] Architected cp15 timer(s) running at 12.50MHz (phys).
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000000] clocksource: arch_sys_counter: mask: 0xffffffffffffff max_cycles: 0x2e2049cda, max_idle_ns: 440795202628 ns
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000003] sched_clock: 56 bits at 12MHz, resolution 80ns, wraps every 4398046511080ns
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000056] clocksource: timer: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 191126102035 ns
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000224] Console: colour dummy device 80x25
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000240] Calibrating delay loop (skipped), value calculated using timer frequency.. 25.00 BogoMIPS (lpj=50000)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000247] pid_max: default: 32768 minimum: 301
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000299] Mount-cache hash table entries: 1024 (order: 1, 8192 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000304] Mountpoint-cache hash table entries: 1024 (order: 1, 8192 bytes)
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.000791] sched-energy: CPU device node has no sched-energy-costs
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.000797] Invalid sched_group_energy for CPU0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000801] CPU0: update cpu_capacity 1024
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.000829] ASID allocator initialised with 32768 entries
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032098] Detected VIPT I-cache on CPU1
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.032126] Invalid sched_group_energy for CPU1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032128] CPU1: update cpu_capacity 1024
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032130] CPU1: Booted secondary processor [410fd034]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032166] Brought up 2 CPUs
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032178] SMP: Total of 2 processors activated.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032184] CPU features: detected feature: 32-bit EL0 Support
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032190] CPU: All CPU(s) started at EL2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.032201] alternatives: patching kernel code
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.032278] Invalid sched_group_energy for CPU1
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.032284] Invalid sched_group_energy for Cluster1
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.032287] Invalid sched_group_energy for CPU0
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    0.032291] Invalid sched_group_energy for Cluster0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.036638] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.036658] futex hash table entries: 512 (order: 4, 65536 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.036764] pinctrl core: initialized pinctrl subsystem
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.037262] NET: Registered protocol family 16
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    0.037676] [SPM] spm_base = ffffff8008026000
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    0.037680] [SPM] spm_irq_0 = 6, spm_irq_1 = 7
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    0.037684] [SPM] spm_irq_2 = 8, spm_irq_3 = 9
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    0.037687] [SPM] set spm as wakeup devcie.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.037692] [SPM] spm_rtc cnt: 24414.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.052064] cpuidle: using governor menu
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.052120] vdso: 2 pages (1 code @ ffffff8008597000, 1 data @ ffffff80087c0000)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.052275] DMA: preallocated 256 KiB pool for atomic allocations
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.052377] Serial: AMBA PL011 UART driver
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    0.055898] genirq: Setting trigger mode 2 for irq 229 failed (mtk_sysirq_set_type+0x0/0xc8)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.085083] vgaarb: loaded
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.085416] usbcore: registered new interface driver usbfs
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.085448] usbcore: registered new interface driver hub
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.085487] usbcore: registered new device driver usb
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.086453] clocksource: Switched to clocksource arch_sys_counter
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091260] NET: Registered protocol family 2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091645] TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091679] TCP bind hash table entries: 4096 (order: 4, 65536 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091739] TCP: Hash tables configured (established 4096 bind 4096)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091784] UDP hash table entries: 256 (order: 1, 8192 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091798] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.091894] NET: Registered protocol family 1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.103247] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.103437] jffs2: version 2.2 (NAND) (SUMMARY) (LZMA) (RTIME) (CMODE_PRIORITY) (c) 2001-2006 Red Hat, Inc.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.103901] fuse init (API version 7.23)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.104545] io scheduler noop registered
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.104726] io scheduler cfq registered (default)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.207338] mtk-pcie 1a143000.pcie: Port0 link down
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.207540] mtk-pcie 1a143000.pcie: PCI host bridge to bus 0000:00
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.207552] pci_bus 0000:00: root bus resource [??? 0x00000000 flags 0x0]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.207559] pci_bus 0000:00: root bus resource [mem 0x20000000-0x27ffffff]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.207565] pci_bus 0000:00: root bus resource [bus 00-ff]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.308372] mtk-pcie 1a145000.pcie: Port1 link down
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.308531] mtk-pcie 1a145000.pcie: PCI host bridge to bus 0001:00
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.308539] pci_bus 0001:00: root bus resource [??? 0x00000000 flags 0x0]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.308545] pci_bus 0001:00: root bus resource [mem 0x28000000-0x2fffffff]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.308551] pci_bus 0001:00: root bus resource [bus 00-ff]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.312575] Serial: 8250/16550 driver, 4 ports, IRQ sharing disabled
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.313820] console [ttyS0] disabled
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    0.334019] 11002000.serial: ttyS0 at MMIO 0x11002000 (irq = 232, base_baud = 1562500) is a ST16650V2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.000957] console [ttyS0] enabled
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    1.005152] Unable to detect cache hierarchy for CPU 0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.013331] loop: module loaded
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.016949] dump_power_table[0] = { .cpufreq_khz = 1350000,	.cpufreq_ncpu = 2,	.cpufreq_power = 995 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.026177] dump_power_table[1] = { .cpufreq_khz = 1262500,	.cpufreq_ncpu = 2,	.cpufreq_power = 811 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.035393] dump_power_table[2] = { .cpufreq_khz = 1137500,	.cpufreq_ncpu = 2,	.cpufreq_power = 736 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.044610] dump_power_table[3] = { .cpufreq_khz = 1025000,	.cpufreq_ncpu = 2,	.cpufreq_power = 624 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.053869] dump_power_table[4] = { .cpufreq_khz = 1350000,	.cpufreq_ncpu = 1,	.cpufreq_power = 517 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.063088] dump_power_table[5] = { .cpufreq_khz = 812500,	.cpufreq_ncpu = 2,	.cpufreq_power = 492 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.072216] dump_power_table[6] = { .cpufreq_khz = 1262500,	.cpufreq_ncpu = 1,	.cpufreq_power = 377 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.081435] dump_power_table[7] = { .cpufreq_khz = 600000,	.cpufreq_ncpu = 2,	.cpufreq_power = 376 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.090566] dump_power_table[8] = { .cpufreq_khz = 1137500,	.cpufreq_ncpu = 1,	.cpufreq_power = 333 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.099784] dump_power_table[9] = { .cpufreq_khz = 437500,	.cpufreq_ncpu = 2,	.cpufreq_power = 295 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.108912] dump_power_table[10] = { .cpufreq_khz = 1025000,	.cpufreq_ncpu = 1,	.cpufreq_power = 258 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.118214] dump_power_table[11] = { .cpufreq_khz = 300000,	.cpufreq_ncpu = 2,	.cpufreq_power = 225 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.127429] dump_power_table[12] = { .cpufreq_khz = 812500,	.cpufreq_ncpu = 1,	.cpufreq_power = 204 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.136643] dump_power_table[13] = { .cpufreq_khz = 600000,	.cpufreq_ncpu = 1,	.cpufreq_power = 166 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.145857] dump_power_table[14] = { .cpufreq_khz = 437500,	.cpufreq_ncpu = 1,	.cpufreq_power = 140 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.155071] dump_power_table[15] = { .cpufreq_khz = 300000,	.cpufreq_ncpu = 1,	.cpufreq_power = 119 }
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.165474] [cal] calefuse1	= 0x79f33b40
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.169410] [cal] calefuse2	= 0x63c010
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.173159] [cal] g_adc_ge_t	= 0x333
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.176731] [cal] g_adc_oe_t	= 0x1e7
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.180306] [cal] g_degc_cali	= 0x2d
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.183878] [cal] g_adc_cali_en_t	= 0x1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.187714] [cal] g_o_slope	= 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.191025] [cal] g_o_slope_sign	= 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.194773] [cal] g_id		= 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.197730] [cal] g_o_vtsmcu1	= 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.201213] [cal] g_o_vtsmcu2	= 0x18f
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.204871] [cal] g_o_vtsmcu3	= 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.208358] [cal] g_o_vtsmcu4	= 0x0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.211843] [cal] g_ge		= 0x2ed
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.214980] [cal] g_gain		= 0x29fd
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.218371] [cal] g_x_roomt1	= 0x1f4e
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.224961] MTK-BTIF[E]hal_btif_clk_get_and_prepare(286):[CCF]clk_btif=ffffffc01e471500
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.232992] MTK-BTIF[E]hal_btif_clk_get_and_prepare(292):[CCF]clk_btif_apdma=ffffffc01e471100
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    1.243367] [btmtk_err] btmtk_get_irq: irq_id:239 irq_flags:8
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.260059] Not Support SPI-Nand device:[0x0 0x0]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.265078] mtk-nor 11014000.spi: w25q128 (16384 Kbytes)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.351295] IMQ driver loaded successfully. (numdevs = 2, numqueues = 1, imq_dev_accurate_stats = 1)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.360432] 	Hooking IMQ after NAT on PREROUTING.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.365135] 	Hooking IMQ before NAT on POSTROUTING.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.370211] libphy: Fixed MDIO Bus: probed
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.374762] sean debug physpeed = 2500
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.401259] libphy: mdio: probed
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.404513] mtk_soc_eth 1b100000.ethernet: generated random MAC address f6:06:48:d2:f6:1a
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.412871] mtk_soc_eth 1b100000.ethernet: connected mac 0 to PHY at fixed-0:00 [uid=00000000, driver=Generic PHY]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.423530] mtk_soc_eth 1b100000.ethernet eth0: mediatek frame engine at 0xffffff8008900000, irq 250
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.432687] mtk_soc_eth 1b100000.ethernet: generated random MAC address c2:00:cd:46:9e:30
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.441024] mtk_soc_eth 1b100000.ethernet: connected mac 1 to PHY at fixed-0:01 [uid=00000000, driver=Generic PHY]
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.451641] mtk_soc_eth 1b100000.ethernet eth1: mediatek frame engine at 0xffffff8008900000, irq 250
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.460779] netif_napi_add() called with weight 256 on device 
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.466775] usbcore: registered new interface driver ax88179_178a
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.472913] usbcore: registered new interface driver cdc_ether
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.478779] usbcore: registered new interface driver cdc_eem
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.484479] usbcore: registered new interface driver qmi_wwan_simcom
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.490871] usbcore: registered new interface driver cdc_ncm
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    1.496917] 1a0c0000.usb supply vbus not found, using dummy regulator
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    1.503388] 1a0c0000.usb supply vusb33 not found, using dummy regulator
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.510279] xhci-mtk 1a0c0000.usb: xHCI Host Controller
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.515515] xhci-mtk 1a0c0000.usb: new USB bus registered, assigned bus number 1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.523005] xhci-mtk 1a0c0000.usb: hcc params 0x01403198 hci version 0x96 quirks 0x00210010
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.531385] xhci-mtk 1a0c0000.usb: irq 246, io mem 0x1a0c0000
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.537227] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.544017] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.551239] usb usb1: Product: xHCI Host Controller
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.556114] usb usb1: Manufacturer: Linux 4.4.198 xhci-hcd
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.561599] usb usb1: SerialNumber: 1a0c0000.usb
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.566519] hub 1-0:1.0: USB hub found
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.570276] hub 1-0:1.0: 2 ports detected
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.574552] xhci-mtk 1a0c0000.usb: xHCI Host Controller
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.579782] xhci-mtk 1a0c0000.usb: new USB bus registered, assigned bus number 2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.587212] usb usb2: We don't know the algorithms for LPM for this host, disabling LPM.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.595353] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.602144] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.609363] usb usb2: Product: xHCI Host Controller
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.614242] usb usb2: Manufacturer: Linux 4.4.198 xhci-hcd
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.619725] usb usb2: SerialNumber: 1a0c0000.usb
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.624602] hub 2-0:1.0: USB hub found
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.628364] hub 2-0:1.0: 1 port detected
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.632615] usbcore: registered new interface driver cdc_wdm
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.638354] usbcore: registered new interface driver usbserial
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.644213] usbcore: registered new interface driver usbserial_generic
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.650761] usbserial: USB Serial support registered for generic
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.656802] usbcore: registered new interface driver option
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.662393] usbserial: USB Serial support registered for GSM modem (1-port)
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.670611] MTK_WDT_NONRST_REG(20000000)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.674725] mtk-wdt 10212000.watchdog: register restart_handler on reboot_notifier_list for psci reset
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.684033] mtk-wdt 10212000.watchdog: Watchdog enabled (timeout=31 sec, nowayout=0)
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    1.692002] register cpuidle driver!!!!!!!!!!!!!!!!!
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.699166] netem: version 1.3
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.702268] nf_conntrack version 0.5.0 (3885 buckets, 15540 max)
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.708580] ip_tables: (C) 2000-2006 Netfilter Core Team
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.714530] NET: Registered protocol family 10
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.719774] sit: IPv6 over IPv4 tunneling driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.724832] NET: Registered protocol family 17
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.729316] bridge: automatic filtering via arp/ip/ip6tables has been deprecated. Update your scripts to load br_netfilter if you need this.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.741922] 8021q: 802.1Q VLAN Support v1.8
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    1.746614] registered taskstats version 1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.262059] ++++++[rtl8367s_hw_reset]+++++++
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.410456] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gdm1_to_gmac1_esw updated = 1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.426443] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.435224] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.443663] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.453573] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.462726] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gdm1_to_gmac1_esw updated = 0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.471867] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.480650] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.489084] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    2.498993] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    3.007803] [rtl8367s_swconfig_init]
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    3.011657] [SPM] pwrap node has not register regmap
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    3.017051] regulator regulator.3: info->modeset_reg 0xc = 0x181c32a2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    3.024423] regulator regulator.3: info->modeset_reg 0xc = 0x101c32a2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    3.047420] VFS: Mounted root (squashfs filesystem) readonly on device 31:7.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    3.054633] Freeing unused kernel memory: 336K
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [    3.059081] This architecture does not have kernel memory protection.
+Tue Jul 12 09:26:41 2022 user.info kernel: [    4.763809] init: Console is alive
+Tue Jul 12 09:26:41 2022 user.info kernel: [    4.767332] init: - watchdog -
+Tue Jul 12 09:26:41 2022 user.info kernel: [    5.444220] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+Tue Jul 12 09:26:41 2022 kern.err kernel: [    5.638843] gpio-keys gpio-keys: failed to set debounce_interval for gpio:511
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    5.647152] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    5.654104] ehci-platform: EHCI generic platform driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    5.660229] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    5.666846] ohci-platform: OHCI generic platform driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    5.673297] usbcore: registered new interface driver usb-storage
+Tue Jul 12 09:26:41 2022 user.info kernel: [    5.679503] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+Tue Jul 12 09:26:41 2022 user.info kernel: [    5.689545] init: - preinit -
+Tue Jul 12 09:26:41 2022 kern.info kernel: [    8.817387] ++++++[rtl8367s_hw_reset]+++++++
+Tue Jul 12 09:26:41 2022 user.info kernel: [   12.692066] mount_root: loading kmods from internal overlay
+Tue Jul 12 09:26:41 2022 user.info kernel: [   12.706489] kmodloader: loading kernel modules from //etc/modules-boot.d/*
+Tue Jul 12 09:26:41 2022 user.info kernel: [   12.713757] kmodloader: done loading kernel modules from //etc/modules-boot.d/*
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [   13.492320] jffs2_scan_eraseblock(): End of filesystem marker found at 0x6000
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [   13.499508] jffs2_build_filesystem(): unlocking the mtd device... done.
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [   13.506130] jffs2_build_filesystem(): erasing all blocks after the end marker... 
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.138471] usb 1-2: new high-speed USB device number 2 using xhci-mtk
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.271297] usb 1-2: New USB device found, idVendor=12d1, idProduct=15c3
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.278006] usb 1-2: New USB device strings: Mfr=12, Product=13, SerialNumber=14
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.285404] usb 1-2: Product: HUAWEI Mobile B5000
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.290110] usb 1-2: Manufacturer: Huawei Technologies Co., Ltd.
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.296118] usb 1-2: SerialNumber: 6BT0220612002424
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.305685] cdc_ether 1-2:2.0 eth2: register 'cdc_ether' at usb-1a0c0000.usb-2, CDC Ethernet Device, 00:1e:10:1f:00:00
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.317235] option 1-2:2.2: GSM modem (1-port) converter detected
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.323519] usb 1-2: GSM modem (1-port) converter now attached to ttyUSB0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.330778] option 1-2:2.3: GSM modem (1-port) converter detected
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.337272] usb 1-2: GSM modem (1-port) converter now attached to ttyUSB1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.344503] option 1-2:2.4: GSM modem (1-port) converter detected
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.350780] usb 1-2: GSM modem (1-port) converter now attached to ttyUSB2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.357953] option 1-2:2.5: GSM modem (1-port) converter detected
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   25.364211] usb 1-2: GSM modem (1-port) converter now attached to ttyUSB3
+Tue Jul 12 09:26:41 2022 kern.warn kernel: [   36.827643] done.
+Tue Jul 12 09:26:41 2022 user.info kernel: [   36.845378] block: attempting to load /tmp/jffs_cfg/upper/etc/config/fstab
+Tue Jul 12 09:26:41 2022 user.err kernel: [   36.852313] block: unable to load configuration (fstab: Entry not found)
+Tue Jul 12 09:26:41 2022 user.info kernel: [   36.859042] block: attempting to load /tmp/jffs_cfg/etc/config/fstab
+Tue Jul 12 09:26:41 2022 user.err kernel: [   36.865425] block: unable to load configuration (fstab: Entry not found)
+Tue Jul 12 09:26:41 2022 user.info kernel: [   36.872148] block: attempting to load /etc/config/fstab
+Tue Jul 12 09:26:41 2022 user.err kernel: [   36.877429] block: unable to load configuration (fstab: Entry not found)
+Tue Jul 12 09:26:41 2022 user.err kernel: [   36.884151] block: no usable configuration
+Tue Jul 12 09:26:41 2022 user.info kernel: [   38.174851] block: attempting to load /tmp/jffs_cfg/upper/etc/config/fstab
+Tue Jul 12 09:26:41 2022 user.err kernel: [   38.181791] block: unable to load configuration (fstab: Entry not found)
+Tue Jul 12 09:26:41 2022 user.info kernel: [   38.188522] block: attempting to load /tmp/jffs_cfg/etc/config/fstab
+Tue Jul 12 09:26:41 2022 user.err kernel: [   38.194917] block: unable to load configuration (fstab: Entry not found)
+Tue Jul 12 09:26:41 2022 user.info kernel: [   38.201642] block: attempting to load /etc/config/fstab
+Tue Jul 12 09:26:41 2022 user.err kernel: [   38.206900] block: unable to load configuration (fstab: Entry not found)
+Tue Jul 12 09:26:41 2022 user.err kernel: [   38.213625] block: no usable configuration
+Tue Jul 12 09:26:41 2022 user.info kernel: [   38.245513] mount_root: overlay filesystem has not been fully initialized yet
+Tue Jul 12 09:26:41 2022 user.info kernel: [   38.260733] mount_root: switching to jffs2 overlay
+Tue Jul 12 09:26:41 2022 user.warn kernel: [   48.137077] urandom-seed: Seed file not found (/etc/urandom.seed)
+Tue Jul 12 09:26:41 2022 user.info kernel: [   48.281485] procd: - early -
+Tue Jul 12 09:26:41 2022 user.info kernel: [   48.284528] procd: - watchdog -
+Tue Jul 12 09:26:41 2022 user.info kernel: [   48.833590] procd: - watchdog -
+Tue Jul 12 09:26:41 2022 user.info kernel: [   48.836879] procd: - ubus -
+Tue Jul 12 09:26:41 2022 user.info kernel: [   48.891647] procd: - init -
+Tue Jul 12 09:26:41 2022 user.info kernel: [   49.055556] kmodloader: loading kernel modules from /etc/modules.d/*
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.076731] Initializing XFRM netlink socket
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.082005] NET: Registered protocol family 15
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.087555] tun: Universal TUN/TAP device driver, 1.6
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.092698] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.104941] l2tp_core: L2TP core driver, V2.0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.109989] l2tp_netlink: L2TP netlink interface
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.116888] gre: GRE over IPv4 demultiplexor driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.122879] ip_gre: GRE over IPv4 tunneling driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.129583] ip6_gre: GRE over IPv6 tunneling driver
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.135845] ip6_tables: (C) 2000-2006 Netfilter Core Team
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.967188] u32 classifier
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.969896]     input device check on
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   49.973702]     Actions configured
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   50.175095] Mirror/redirect action on
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.132064] Ebtables v2.0 registered
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.234880] xt_time: kernel timezone is -0000
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.244205] PPP generic driver version 2.4.2
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.249308] PPP MPPE Compression module registered
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.254819] NET: Registered protocol family 24
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.259899] PPTP driver version 0.8.5
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   51.265714] l2tp_ppp: PPPoL2TP kernel driver, V2.0
+Tue Jul 12 09:26:41 2022 user.info kernel: [   51.271765] kmodloader: done loading kernel modules from /etc/modules.d/*
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   54.977241] mediatek_soc_hnat 1b100000.hnat: wan = eth1
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   54.982537] mediatek_soc_hnat 1b100000.hnat: lan = eth0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   54.987773] mediatek_soc_hnat 1b100000.hnat: ppd = eth0
+Tue Jul 12 09:26:41 2022 kern.info kernel: [   54.993010] mediatek_soc_hnat 1b100000.hnat: gmac num = 2
+Tue Jul 12 09:26:42 2022 kern.info kernel: [   54.998930] mediatek_soc_hnat 1b100000.hnat: FOE entry number = 8192
+Tue Jul 12 09:26:42 2022 kern.info kernel: [   55.005702] mediatek_soc_hnat 1b100000.hnat: hwnat start
+Tue Jul 12 09:26:42 2022 daemon.err rmmod: module is not loaded
+Tue Jul 12 09:26:42 2022 daemon.err rmmod: module is not loaded
+Tue Jul 12 09:26:42 2022 daemon.err rmmod: module is not loaded
+Tue Jul 12 09:26:42 2022 daemon.err rmmod: module is not loaded
+Tue Jul 12 09:26:42 2022 daemon.err insmod: module is already loaded - mtkhnat
+Tue Jul 12 09:26:43 2022 kern.info kernel: [   56.305916] ++++++[rtl8367s_hw_reset]+++++++
+Tue Jul 12 09:26:44 2022 kern.info kernel: [   57.663610] device eth0 entered promiscuous mode
+Tue Jul 12 09:26:44 2022 kern.info kernel: [   57.675981] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 09:26:44 2022 kern.info kernel: [   57.681424] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 09:26:44 2022 daemon.info odhcpd[2676]: Raising SIGUSR1 due to address change on br-lan
+Tue Jul 12 09:26:44 2022 daemon.err odhcp6c[2732]: Failed to send DHCPV6 message to ff02::1:2 (Cannot assign requested address)
+Tue Jul 12 09:26:45 2022 daemon.err block: /dev/mtdblock7 is already mounted on /rom
+Tue Jul 12 09:26:45 2022 daemon.err block: /dev/mtdblock8 is already mounted on /overlay
+Tue Jul 12 09:26:45 2022 cron.info crond[2919]: crond (busybox 1.25.1) started, log level 5
+Tue Jul 12 09:26:45 2022 cron.info crond[2919]: ignoring file 'root' (no such user)
+Tue Jul 12 09:26:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 09:26:46 2022 daemon.err odhcp6c[2732]: Failed to send DHCPV6 message to ff02::1:2 (Cannot assign requested address)
+Tue Jul 12 09:26:46 2022 authpriv.info dropbear[2938]: Not backgrounding
+Tue Jul 12 09:26:46 2022 kern.info kernel: [   59.682457] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 09:26:48 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: started, version 2.78 cachesize 150
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: DNS service limited to local subnets
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 09:26:50 2022 daemon.warn dnsmasq[3139]: warning: using interface br-lan instead
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq-dhcp[3139]: DHCP, IP range 192.168.10.100 -- 192.168.10.249, lease time 12h
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: using local addresses only for domain lan
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: reading /tmp/resolv.conf.auto
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: using local addresses only for domain lan
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: using nameserver 222.246.129.80#53
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: using nameserver 114.114.114.114#53
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: read /etc/hosts - 4 addresses
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq[3139]: read /tmp/hosts/dhcp.cfg02411c - 2 addresses
+Tue Jul 12 09:26:50 2022 daemon.info dnsmasq-dhcp[3139]: read /etc/ethers - 0 addresses
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: Using l2tp kernel support.
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: xl2tpd version xl2tpd-1.3.6 started on LEDE PID:3235
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: Written by Mark Spencer, Copyright (C) 1998, Adtran, Inc.
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: Forked by Scott Balmos and David Stipp, (C) 2001
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: Inherited by Jeff McAdams, (C) 2002
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: Forked again by Xelerance (www.xelerance.com) (C) 2006
+Tue Jul 12 09:26:52 2022 daemon.info xl2tpd[3235]: Listening on IP address 0.0.0.0, port 1701
+Tue Jul 12 09:26:52 2022 cron.info crond[3261]: crond (busybox 1.25.1) started, log level 5
+Tue Jul 12 09:26:52 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 09:26:54 2022 daemon.err urandom_seed[3435]: chown: unknown user/group root:root
+Tue Jul 12 09:26:54 2022 daemon.err urandom_seed[3435]: An error occured
+Tue Jul 12 09:26:55 2022 daemon.info procd: - init complete -
+Tue Jul 12 09:30:16 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 09:30:31 2022 kern.info kernel: [   88.830169] device eth1 entered promiscuous mode
+Tue Jul 12 09:30:31 2022 kern.info kernel: [   88.835067] device br-lan entered promiscuous mode
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.167422] usb 1-2: USB disconnect, device number 2
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.172558] cdc_ether 1-2:2.0 eth2: unregister 'cdc_ether' usb-1a0c0000.usb-2, CDC Ethernet Device
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.199078] option1 ttyUSB0: GSM modem (1-port) converter now disconnected from ttyUSB0
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.207206] option 1-2:2.2: device disconnected
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.212242] option1 ttyUSB1: GSM modem (1-port) converter now disconnected from ttyUSB1
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.220342] option 1-2:2.3: device disconnected
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.225382] option1 ttyUSB2: GSM modem (1-port) converter now disconnected from ttyUSB2
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.233469] option 1-2:2.4: device disconnected
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.238542] option1 ttyUSB3: GSM modem (1-port) converter now disconnected from ttyUSB3
+Tue Jul 12 09:30:35 2022 kern.info kernel: [   92.246616] option 1-2:2.5: device disconnected
+Tue Jul 12 09:30:45 2022 daemon.info dnsmasq[3139]: read /etc/hosts - 4 addresses
+Tue Jul 12 09:30:45 2022 daemon.info dnsmasq[3139]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 09:30:45 2022 daemon.info dnsmasq[3139]: read /tmp/hosts/dhcp.cfg02411c - 2 addresses
+Tue Jul 12 09:30:45 2022 daemon.info dnsmasq-dhcp[3139]: read /etc/ethers - 0 addresses
+Tue Jul 12 09:31:38 2022 auth.info login[4148]: root login on 'ttyS0'
+Tue Jul 12 09:38:26 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 09:44:37 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 09:45:49 2022 daemon.info procd: Instance cwmpd::instance1 s in a crash loop 6 crashes, 69 seconds since last crash
+Tue Jul 12 09:53:42 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 09:59:40 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:03:57 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:08:01 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:14:26 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:19:27 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:26:02 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 10:34:48 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:41:57 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:46:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:51:09 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 10:58:16 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:06:56 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:10:42 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:19:55 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:26:00 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 11:30:06 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:39:55 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:46:55 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:54:59 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 11:59:16 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:06:07 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:10:28 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:19:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:24:26 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 12:30:52 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:40:13 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:45:53 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:49:16 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 12:57:48 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:04:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:12:42 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:19:12 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:27:10 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 13:35:09 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:43:50 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:49:22 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:51:15 2022 kern.info kernel: [15732.361943] br-lan: port 1(eth0) entered disabled state
+Tue Jul 12 13:51:15 2022 daemon.info odhcpd[2676]: Raising SIGUSR1 due to address change on br-lan
+Tue Jul 12 13:51:15 2022 kern.info kernel: [15732.371769] device eth0 left promiscuous mode
+Tue Jul 12 13:51:15 2022 kern.info kernel: [15732.376880] br-lan: port 1(eth0) entered disabled state
+Tue Jul 12 13:51:15 2022 kern.info kernel: [15732.386113] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Tue Jul 12 13:51:15 2022 daemon.warn dnsmasq[3139]: no servers found in /tmp/resolv.conf.auto, will retry
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.373457] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gdm1_to_gmac1_esw updated = 0
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.382606] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.391397] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.399843] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 0
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.409759] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.418763] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gdm1_to_gmac1_esw updated = 1
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.428194] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.437476] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.445987] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 1
+Tue Jul 12 13:51:16 2022 kern.info kernel: [15733.456942] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 13:51:17 2022 kern.info kernel: [15734.007281] ++++++[rtl8367s_hw_reset]+++++++
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[3139]: exiting on receipt of SIGTERM
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: started, version 2.78 cachesize 150
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: DNS service limited to local subnets
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: using local addresses only for domain lan
+Tue Jul 12 13:51:17 2022 daemon.warn dnsmasq[2037]: no servers found in /tmp/resolv.conf.auto, will retry
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: read /etc/hosts - 4 addresses
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 13:51:17 2022 daemon.info dnsmasq[2037]: read /tmp/hosts/dhcp.cfg02411c - 0 addresses
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2037]: exiting on receipt of SIGTERM
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.400027] device eth0 entered promiscuous mode
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.407716] IPv6: ADDRCONF(NETDEV_UP): br-lan: link is not ready
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.438250] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Tue Jul 12 13:51:18 2022 daemon.info odhcpd[2676]: Raising SIGUSR1 due to address change on br-lan
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.445664] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gdm1_to_gmac1_esw updated = 0
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.471925] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.512138] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.543871] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 0
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.559259] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.575376] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.582452] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gdm1_to_gmac1_esw updated = 1
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.592472] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.601693] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.610805] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 1
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.622171] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.636557] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.642061] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 13:51:18 2022 kern.info kernel: [15735.648498] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: started, version 2.78 cachesize 150
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: DNS service limited to local subnets
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 13:51:18 2022 daemon.warn dnsmasq[2313]: warning: using interface br-lan instead
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq-dhcp[2313]: DHCP, IP range 192.168.100.100 -- 192.168.100.249, lease time 12h
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: using local addresses only for domain lan
+Tue Jul 12 13:51:18 2022 daemon.warn dnsmasq[2313]: no servers found in /tmp/resolv.conf.auto, will retry
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: read /etc/hosts - 4 addresses
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq[2313]: read /tmp/hosts/dhcp.cfg02411c - 2 addresses
+Tue Jul 12 13:51:18 2022 daemon.info dnsmasq-dhcp[2313]: read /etc/ethers - 0 addresses
+Tue Jul 12 13:51:18 2022 daemon.err odhcp6c[2244]: Failed to send DHCPV6 message to ff02::1:2 (Cannot assign requested address)
+Tue Jul 12 13:51:19 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 13:51:20 2022 daemon.err odhcp6c[2244]: Failed to send DHCPV6 message to ff02::1:2 (Cannot assign requested address)
+Tue Jul 12 13:51:20 2022 kern.info kernel: [15737.645433] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 13:51:25 2022 daemon.info dnsmasq[2313]: reading /tmp/resolv.conf.auto
+Tue Jul 12 13:51:25 2022 daemon.info dnsmasq[2313]: using local addresses only for domain lan
+Tue Jul 12 13:51:25 2022 daemon.info dnsmasq[2313]: using nameserver 222.246.129.80#53
+Tue Jul 12 13:51:25 2022 daemon.info dnsmasq[2313]: using nameserver 114.114.114.114#53
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2313]: exiting on receipt of SIGTERM
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: started, version 2.78 cachesize 150
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: DNS service limited to local subnets
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 13:51:30 2022 daemon.warn dnsmasq[2853]: warning: using interface br-lan instead
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq-dhcp[2853]: DHCP, IP range 192.168.100.100 -- 192.168.100.249, lease time 12h
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: using local addresses only for domain lan
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: reading /tmp/resolv.conf.auto
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: using local addresses only for domain lan
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: using nameserver 222.246.129.80#53
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: using nameserver 114.114.114.114#53
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: read /etc/hosts - 4 addresses
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq[2853]: read /tmp/hosts/dhcp.cfg02411c - 2 addresses
+Tue Jul 12 13:51:30 2022 daemon.info dnsmasq-dhcp[2853]: read /etc/ethers - 0 addresses
+Tue Jul 12 14:01:16 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:09:15 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:12:38 2022 daemon.info odhcpd[2676]: Raising SIGUSR1 due to address change on br-lan
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.563162] br-lan: port 1(eth0) entered disabled state
+Tue Jul 12 14:12:38 2022 daemon.info odhcpd[2676]: Raising SIGUSR1 due to address change on br-lan
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.572382] device eth0 left promiscuous mode
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.577500] br-lan: port 1(eth0) entered disabled state
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.586452] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Tue Jul 12 14:12:38 2022 daemon.warn dnsmasq[2853]: no servers found in /tmp/resolv.conf.auto, will retry
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.673265] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gdm1_to_gmac1_esw updated = 1
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.687586] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.696720] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.706463] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 1
+Tue Jul 12 14:12:38 2022 kern.info kernel: [17015.717774] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 14:12:39 2022 kern.info kernel: [17016.609165] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gdm1_to_gmac1_esw updated = 0
+Tue Jul 12 14:12:39 2022 kern.info kernel: [17016.618300] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 14:12:39 2022 kern.info kernel: [17016.627647] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 14:12:39 2022 kern.info kernel: [17016.636537] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 0
+Tue Jul 12 14:12:39 2022 kern.info kernel: [17016.650131] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 14:12:40 2022 kern.info kernel: [17017.181525] ++++++[rtl8367s_hw_reset]+++++++
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[2853]: exiting on receipt of SIGTERM
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: started, version 2.78 cachesize 150
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: DNS service limited to local subnets
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: using local addresses only for domain lan
+Tue Jul 12 14:12:40 2022 daemon.warn dnsmasq[31676]: no servers found in /tmp/resolv.conf.auto, will retry
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: read /etc/hosts - 4 addresses
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 14:12:40 2022 daemon.info dnsmasq[31676]: read /tmp/hosts/dhcp.cfg02411c - 0 addresses
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31676]: exiting on receipt of SIGTERM
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.572857] device eth0 entered promiscuous mode
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.580322] IPv6: ADDRCONF(NETDEV_UP): br-lan: link is not ready
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.606810] IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+Tue Jul 12 14:12:41 2022 daemon.info odhcpd[2676]: Raising SIGUSR1 due to address change on br-lan
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.657415] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gdm1_to_gmac1_esw updated = 0
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.667228] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.680474] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.694213] mtk_soc_eth 1b100000.ethernet: path gmac2_rgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 0
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.708919] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.729588] IPv6: ADDRCONF(NETDEV_CHANGE): eth1: link becomes ready
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.741566] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gdm1_to_gmac1_esw updated = 1
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.764521] mtk_soc_eth 1b100000.ethernet: mux mux_gmac2_gmac0_to_gephy isn't present on the SoC
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.778789] mtk_soc_eth 1b100000.ethernet: mux mux_u3_gmac2_to_qphy isn't present on the SoC
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.796473] mtk_soc_eth 1b100000.ethernet: path gmac1_sgmii in set_mux_gmac1_gmac2_to_sgmii_rgmii updated = 1
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.807839] mtk_soc_eth 1b100000.ethernet: mux mux_gmac12_to_gephy_sgmii isn't present on the SoC
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.819420] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.824901] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 14:12:41 2022 kern.info kernel: [17018.834495] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: started, version 2.78 cachesize 150
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: DNS service limited to local subnets
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 14:12:41 2022 daemon.warn dnsmasq[31954]: warning: using interface br-lan instead
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq-dhcp[31954]: DHCP, IP range 192.168.10.100 -- 192.168.10.249, lease time 12h
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: using local addresses only for domain lan
+Tue Jul 12 14:12:41 2022 daemon.warn dnsmasq[31954]: no servers found in /tmp/resolv.conf.auto, will retry
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: read /etc/hosts - 4 addresses
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq[31954]: read /tmp/hosts/dhcp.cfg02411c - 2 addresses
+Tue Jul 12 14:12:41 2022 daemon.info dnsmasq-dhcp[31954]: read /etc/ethers - 0 addresses
+Tue Jul 12 14:12:42 2022 daemon.err odhcp6c[31934]: Failed to send DHCPV6 message to ff02::1:2 (Cannot assign requested address)
+Tue Jul 12 14:12:42 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:12:43 2022 kern.info kernel: [17020.825157] br-lan: port 1(eth0) entered forwarding state
+Tue Jul 12 14:12:48 2022 daemon.info dnsmasq[31954]: reading /tmp/resolv.conf.auto
+Tue Jul 12 14:12:48 2022 daemon.info dnsmasq[31954]: using local addresses only for domain lan
+Tue Jul 12 14:12:48 2022 daemon.info dnsmasq[31954]: using nameserver 222.246.129.80#53
+Tue Jul 12 14:12:48 2022 daemon.info dnsmasq[31954]: using nameserver 114.114.114.114#53
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[31954]: exiting on receipt of SIGTERM
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: started, version 2.78 cachesize 150
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: DNS service limited to local subnets
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: compile time options: IPv6 GNU-getopt no-DBus no-i18n no-IDN DHCP no-DHCPv6 no-Lua TFTP no-conntrack no-ipset no-auth no-DNSSEC no-ID loop-detect inotify
+Tue Jul 12 14:12:54 2022 daemon.warn dnsmasq[32486]: warning: using interface br-lan instead
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq-dhcp[32486]: DHCP, IP range 192.168.10.100 -- 192.168.10.249, lease time 12h
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: using local addresses only for domain lan
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: reading /tmp/resolv.conf.auto
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: using local addresses only for domain lan
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: using nameserver 222.246.129.80#53
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: using nameserver 114.114.114.114#53
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: read /etc/hosts - 4 addresses
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: read /tmp/hosts/odhcpd - 0 addresses
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq[32486]: read /tmp/hosts/dhcp.cfg02411c - 2 addresses
+Tue Jul 12 14:12:54 2022 daemon.info dnsmasq-dhcp[32486]: read /etc/ethers - 0 addresses
+Tue Jul 12 14:16:49 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:20:13 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:29:42 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 14:39:37 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:47:09 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 14:53:42 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:00:58 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:07:24 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:12:49 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:17:14 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:27:08 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 15:30:28 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:37:56 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:42:30 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:47:30 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 15:55:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:02:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:11:07 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:19:28 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:23:39 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 16:32:25 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:41:45 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:49:50 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 16:56:53 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:02:28 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:06:35 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:11:37 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:17:11 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:20:56 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:24:52 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:30:00 2022 cron.info crond[3261]: ignoring file 'root' (no such user)
+Tue Jul 12 17:32:31 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:39:27 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:44:51 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:51:41 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
+Tue Jul 12 17:57:28 2022 daemon.info odhcpd[2676]: Using a RA lifetime of 1800 seconds on br-lan
