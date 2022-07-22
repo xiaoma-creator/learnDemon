@@ -31,9 +31,10 @@ int main(int argc, char const *argv[])
     char destip[64] = {0};
 
     /*
-        %*:忽略
-        %*[^[]]:忽略--直到匹配[
-        %[^]]:选择--直到匹配]
+        ^:为否符号，表示不想匹配的符号，例如：[^z][a-z]+可以匹配所有除"z"开头的以外的所有字
+        *:忽略
+        %*[^[]:忽略--不为[的内容，遇到[ 停止
+        %[^]]:选择--不为 ] 的内容，遇到 ] 停止
     */
     sscanf(str2, "%*[^[]\[%[^]]%*[^[]\[%[^]]", startip, destip);
     printf("starip: %s\nsestip: %s\n", startip, destip);
@@ -42,7 +43,18 @@ int main(int argc, char const *argv[])
         starip: www.qqqqqqqqqqqqqqqqqqqqqqqq.com
         sestip: www.qqqqqqqqqqqqqqqqqqqqqqqw.com
     */
-    return 0;
+
+    /* 取IP地址前三段 */
+    char *ip = "";
+    char networkNum[16] = {0};
+    char val1[4] = {0}, val2[4] = {0}, val3[4] = {0};
+
+    sscanf(ip, "%[0-9].%[0-9].%[0-9]", val1, val2, val3);
+
+    printf("%s.%s.%s\n", val1, val2, val3);
+
+
+   return 0;
 }
 
 
