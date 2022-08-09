@@ -35,6 +35,15 @@
 	————————————————
 	版权声明：本文为CSDN博主「ericbars」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
 	原文链接：https://blog.csdn.net/ericbar/article/details/79652086
+
+	通用格式控制:
+    0 重置所有属性
+    1 高亮/加粗
+    2 暗淡
+    4 下划线
+    5 闪烁
+    7 反转
+    8 隐藏
 */
 
 /* 需要在linux下运行 */
@@ -46,13 +55,9 @@ int main()
 	printf("\033[47;34mhello\033[0m\n");
 	printf("\033[47;35mhello\033[0m\n");
 	printf("\033[47;36mhello\033[0m\n");
-	printf("\033[47;35m[--ywf-->%s, %d]:\033[0m \n", __FUNCTION__, __LINE__);
+	printf("\033[47;35m[%s, %d]:\033[0m \n", __FUNCTION__, __LINE__);
+    printf("\033[1;35m[%s, %d]:\033[0m \n", __FUNCTION__, __LINE__);
+
+    return 1;
 }
-
-
-
-
-
-
-
 
